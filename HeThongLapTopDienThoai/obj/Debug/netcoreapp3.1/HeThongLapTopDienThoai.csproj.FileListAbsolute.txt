@@ -1,0 +1,15 @@
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\bin\Debug\netcoreapp3.1\HeThongLapTopDienThoai.exe
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\bin\Debug\netcoreapp3.1\HeThongLapTopDienThoai.deps.json
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\bin\Debug\netcoreapp3.1\HeThongLapTopDienThoai.runtimeconfig.json
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\bin\Debug\netcoreapp3.1\HeThongLapTopDienThoai.runtimeconfig.dev.json
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\bin\Debug\netcoreapp3.1\HeThongLapTopDienThoai.dll
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\bin\Debug\netcoreapp3.1\HeThongLapTopDienThoai.pdb
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\obj\Debug\netcoreapp3.1\HeThongLapTopDienThoai.csproj.AssemblyReference.cache
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\obj\Debug\netcoreapp3.1\HeThongLapTopDienThoai.AssemblyInfoInputs.cache
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\obj\Debug\netcoreapp3.1\HeThongLapTopDienThoai.AssemblyInfo.cs
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\obj\Debug\netcoreapp3.1\HeThongLapTopDienThoai.csproj.CoreCompileInputs.cache
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\obj\Debug\netcoreapp3.1\HeThongLapTopDienThoai.csproj.CopyComplete
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\obj\Debug\netcoreapp3.1\HeThongLapTopDienThoai.dll
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\obj\Debug\netcoreapp3.1\HeThongLapTopDienThoai.pdb
+E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai\obj\Debug\netcoreapp3.1\HeThongLapTopDienThoai.genruntimeconfig.cache
