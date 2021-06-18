@@ -6,6 +6,7 @@ namespace HeThongLapTopDienThoai
 {
     class Common
     {
-        public static string FullPath = @"E:\learnIT\Module2\JSON\HeThongLapTopDienThoai\HeThongLapTopDienThoai";
+        public static string FullPath = @"E:\learnIT\Module2\JSON\ChucNangMuaHangOnline\HeThongLapTopDienThoai";
+        
     }
 }

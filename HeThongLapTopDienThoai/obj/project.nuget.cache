@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aT1CwtUDZhTqYzVTmfNfKMBQqSGKacBbrncjkchqwrfQo/fCMXXsWHtL6iFUvL4WL40YkRYYkGZPtfp3RpTghQ==",
+  "dgSpecHash": "tBsbFJ/k8HGEM7mC4aFXdGUogUffO/X7+jFn3wtSdBtbbzyA6CwstZPBSPErJMqZ9b50HzkvhHLQNNqbTq9NVA==",
   "success": true,
-  "projectFilePath": "E:\\learnIT\\Module2\\JSON\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai.csproj",
+  "projectFilePath": "E:\\learnIT\\Module2\\JSON\\ChucNangMuaHangOnline\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\owner\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

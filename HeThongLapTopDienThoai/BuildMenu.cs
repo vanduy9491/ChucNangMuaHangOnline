@@ -40,7 +40,6 @@ namespace HeThongLapTopDienThoai
                             if (check)
                             {
                                 Menu2.Process2();
-                                break;
                             }
                             break;
                         }

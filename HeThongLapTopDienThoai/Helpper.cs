@@ -27,6 +27,7 @@ namespace HeThongLapTopDienThoai
                 sw.WriteLine(serializeObject);
             }
         }
+       
         public static void HangNhap(List<SanPham> loaiHangs, out long sum)
         {
             var result1 = Helpper<HangHoa>.ReadFile("sanpham.json");
@@ -73,7 +74,7 @@ namespace HeThongLapTopDienThoai
                                 {
                                     loaiHangs.Add(new SanPham()
                                     {
-                                        Name = name,
+                                        Name = item.Name,
                                         Soluong = sl,
                                         Gia = item.Gia
                                     });
@@ -91,6 +92,34 @@ namespace HeThongLapTopDienThoai
             {
                 sum += sanpham.TongTien1MatHang;
             }
+        }
+        public static void ChinhSuaGioHang(List<SanPham> loaiHangs)
+        {
+            SanPham.XemGioHang(loaiHangs);
+            Console.Write("Nhap mon hang muon chinh sua :");
+            string name = Console.ReadLine();
+            bool check = false;
+            foreach (SanPham hang in loaiHangs)
+            {
+                if (hang.Name.ToLower() == name.ToLower())
+                {
+                    Console.Write("Nhap so luong muon thay doi: ");
+                    int sl = int.Parse(Console.ReadLine());
+                    check = true;
+                    if (sl == 0)
+                    {
+                        loaiHangs.Remove(hang);
+                        Console.WriteLine("San pham da xoa khoi gio hang.");
+                        break;
+                    }
+                    else
+                    {
+                        hang.Soluong = sl;
+                    }
+                }
+            }
+            if (check == false) { Console.WriteLine("San pham khong co trong gio, vui long kiem tra lai!!"); }
+            SanPham.XemGioHang(loaiHangs);
         }
     }
 }

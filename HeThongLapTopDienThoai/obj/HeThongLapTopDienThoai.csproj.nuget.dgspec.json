@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\learnIT\\Module2\\JSON\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai.csproj": {}
+    "E:\\learnIT\\Module2\\JSON\\ChucNangMuaHangOnline\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai.csproj": {}
   },
   "projects": {
-    "E:\\learnIT\\Module2\\JSON\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai.csproj": {
+    "E:\\learnIT\\Module2\\JSON\\ChucNangMuaHangOnline\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\learnIT\\Module2\\JSON\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai.csproj",
+        "projectUniqueName": "E:\\learnIT\\Module2\\JSON\\ChucNangMuaHangOnline\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai.csproj",
         "projectName": "HeThongLapTopDienThoai",
-        "projectPath": "E:\\learnIT\\Module2\\JSON\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai.csproj",
+        "projectPath": "E:\\learnIT\\Module2\\JSON\\ChucNangMuaHangOnline\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai.csproj",
         "packagesPath": "C:\\Users\\owner\\.nuget\\packages\\",
-        "outputPath": "E:\\learnIT\\Module2\\JSON\\HeThongLapTopDienThoai\\HeThongLapTopDienThoai\\obj\\",
+        "outputPath": "E:\\learnIT\\Module2\\JSON\\ChucNangMuaHangOnline\\HeThongLapTopDienThoai\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\owner\\AppData\\Roaming\\NuGet\\NuGet.Config",

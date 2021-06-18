@@ -16,124 +16,20 @@ namespace HeThongLapTopDienThoai
         }
         public override string ToString()
         {
-            return $"{Name}\t {Gia}vnd\t {Soluong}\t {TongTien1MatHang}";
+            return $"{Name}\t {Soluong}\t {string.Format("{0:0,0}", Gia)}vnd\t {string.Format("{0:0,0}", TongTien1MatHang)}vnd";
         }
-        //public static bool SanPhamIsExist(List<HangHoa> loaiHangs, string name)
-        //{
-        //    foreach (var item in loaiHangs)
-        //    {
-        //       for (int i = 0; i < item.dienthoai.Count; i++)
-        //       {
-        //            if (item.dienthoai[i].Name.ToLower() == name.ToLower()) return true;
-        //       }
-        //       for (int i = 0; i < item.laptop.Count; i++)
-        //       {
-        //            if (item.laptop[i].Name.ToLower() == name.ToLower()) return true;
-        //       }
-        //    }
-        //    return false;
-        //}
-        //public static void HangNhap(List<SanPham> loaiHangs, out long sum)
-        //{
-        //    var result1 = Helpper<DanhSachHang>.ReadFile("sanpham.json");
-           
-
-        //    string choice = "";
-        //    bool check1 = false;
-        //    do
-        //    {
-        //        Console.Write("Nhap ten san pham: ");
-        //        string name = Console.ReadLine();
-                
-        //        foreach (SanPham sanpham in loaiHangs)
-        //        {
-        //            if (sanpham.Name.ToLower() == name.ToLower())
-        //            {
-        //                check1 = true;
-        //            }
-        //        }
-        //        Console.Write("Nhap so luong muon mua: ");
-        //        int sl = int.Parse(Console.ReadLine());
-        //        foreach (var item in result1.mathang)
-        //        {
-        //            for (int i = 0; i < item.dienthoai.Count; i++)
-        //            {
-        //                if (item.dienthoai[i].Name.ToLower() == name.ToLower())
-        //                {
-        //                    if (item.dienthoai[i].Soluong < sl)
-        //                    {
-        //                        Console.WriteLine("So luon mat hang khong du dap ung, xin quy khach thong cam mua so luong it hon!!");
-        //                    }
-        //                    else
-        //                    {
-        //                        if (check1)
-        //                        {
-        //                            foreach (SanPham items in loaiHangs)
-        //                            {
-        //                                if (items.Name.ToLower() == name.ToLower())
-        //                                {
-        //                                    items.Soluong += sl;
-        //                                }
-        //                            }
-        //                        }
-        //                        else
-        //                        {
-        //                            loaiHangs.Add(new SanPham()
-        //                            {
-        //                                Name = name,
-        //                                Soluong = sl,
-        //                                Gia = item.dienthoai[i].Gia
-        //                            });
-        //                        }
-        //                    }
-        //                }
-        //            }
-        //            for (int i = 0; i < item.laptop.Count; i++)
-        //            {
-        //                if (item.laptop[i].Name.ToLower() == name.ToLower())
-        //                {
-        //                    if (item.laptop[i].Soluong < sl)
-        //                    {
-        //                        Console.WriteLine("So luon mat hang khong du dap ung, xin quy khach thong cam mua so luong it hon!!");
-        //                    }
-        //                    else
-        //                    {
-        //                        if (check1)
-        //                        {
-        //                            foreach (SanPham items in loaiHangs)
-        //                            {
-        //                                if (items.Name.ToLower() == name.ToLower())
-        //                                {
-        //                                    items.Soluong += sl;
-        //                                }
-        //                            }
-        //                        }
-        //                        else
-        //                        {
-        //                            loaiHangs.Add(new SanPham()
-        //                            {
-        //                                Name = name,
-        //                                Soluong = sl,
-        //                                Gia = item.laptop[i].Gia
-        //                            });
-        //                        }
-        //                    }
-        //                }
-        //            }
-        //        }
-        //        Console.WriteLine("Ban co muon nhap them hang??");
-        //        Console.Write("Nhap c de tiep tuc nhap, k de thoat: ");
-        //        choice = Console.ReadLine();
-        //    }
-        //    while (choice != "k");
-        //    sum = 0;
-        //    foreach (SanPham sanpham in loaiHangs)
-        //    {
-        //        sum += sanpham.TongTien1MatHang;
-        //    }
-        //}
+        public static void ShowHang()
+        {
+            var result = Helpper<HangHoa>.ReadFile("sanpham.json");
+            Console.WriteLine("Ten san pham\tDon gia\t");
+            foreach (var hang in result.mathang)
+            {
+                Console.WriteLine($"{hang.Name}\t{string.Format("{0:0,0}", hang.Gia)}vnd");
+            } 
+        }
         public static void XemGioHang(List<SanPham> loaiHangs)
         {
+            Console.WriteLine("Ten san pham\tSo luong\tDon gia\tTong Tien 1 san pham");
             foreach (SanPham hang in loaiHangs)
             {
                 Console.WriteLine(hang.ToString());

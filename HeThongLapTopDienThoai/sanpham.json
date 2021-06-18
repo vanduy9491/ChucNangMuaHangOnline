@@ -1,60 +1,59 @@
 {
-  "mathang":
-  [
-        {
-          "Name": "Nitro 5",
-          "Gia": 22290000,
-          "Soluong": 100
-        },
-        {
-          "Name": "Aspore 7",
-          "Gia": 21290000,
-          "Soluong": 100
-        },
-        {
-          "Name": "Swiift 5",
-          "Gia": 29900000,
-          "Soluong": 100
-        },
-        {
-          "Name": "MacBook Pro",
-          "Gia": 49490000,
-          "Soluong": 100
-        },
-        {
-          "Name": "MacBook Air",
-          "Gia": 32990000,
-          "Soluong": 100
-        },
-        {
-          "Name": "Iphone 12",
-          "Gia": 15290000,
-          "Soluong": 100
-        },
-        {
-          "Name": "iphone 11",
-          "Gia": 12290000,
-          "Soluong": 100
-        },
-        {
-          "Name": "iphone 8",
-          "Gia": 7290000,
-          "Soluong": 100
-        },
-        {
-          "Name": "Galaxy S21",
-          "Gia": 25290000,
-          "Soluong": 100
-        },
-        {
-          "Name": "Galaxy note20",
-          "Gia": 22290000,
-          "Soluong": 100
-        },
-        {
-          "Name": "Galaxy S21 plus",
-          "Gia": 27290000,
-          "Soluong": 100
-        }
-      ]
- }
+  "mathang": [
+    {
+      "Name": "Nitro 5",
+      "Gia": 22290000,
+      "Soluong": 100
+    },
+    {
+      "Name": "Aspore 7",
+      "Gia": 21290000,
+      "Soluong": 100
+    },
+    {
+      "Name": "Swiift 5",
+      "Gia": 29900000,
+      "Soluong": 100
+    },
+    {
+      "Name": "MacBook Pro",
+      "Gia": 49490000,
+      "Soluong": 100
+    },
+    {
+      "Name": "MacBook Air",
+      "Gia": 32990000,
+      "Soluong": 100
+    },
+    {
+      "Name": "Iphone 12",
+      "Gia": 15290000,
+      "Soluong": 100
+    },
+    {
+      "Name": "iphone 11",
+      "Gia": 12290000,
+      "Soluong": 100
+    },
+    {
+      "Name": "iphone 8",
+      "Gia": 7290000,
+      "Soluong": 100
+    },
+    {
+      "Name": "Galaxy S21",
+      "Gia": 25290000,
+      "Soluong": 100
+    },
+    {
+      "Name": "Galaxy note20",
+      "Gia": 22290000,
+      "Soluong": 100
+    },
+    {
+      "Name": "Galaxy S21 plus",
+      "Gia": 27290000,
+      "Soluong": 100
+    }
+  ]
+}

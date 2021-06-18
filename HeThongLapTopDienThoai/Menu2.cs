@@ -8,7 +8,7 @@ namespace HeThongLapTopDienThoai
     class Menu2
     {
         const int min = 1, max = 4;
-        const int Themhang = 1, XemGio = 2, DatHang = 3, Thoat = 4;
+        const int Themhang = 1, XemGio = 2, DatHang = 4,ChinhSua = 3, Thoat = 5;
         public static void Buildmenu2(out int option)
         {
             do
@@ -16,8 +16,9 @@ namespace HeThongLapTopDienThoai
                 Console.WriteLine("-----------Menu-----------");
                 Console.WriteLine("1. Them hang vao gio");
                 Console.WriteLine("2. Xem gio hang");
-                Console.WriteLine("3. Dat hang");
-                Console.WriteLine("4. Thoat");
+                Console.WriteLine("3. Chinh sua gio hang");
+                Console.WriteLine("4. Dat hang");
+                Console.WriteLine("5. Thoat");
                 Console.Write($"Please choice a number ({min},{max}):");
                 if (!int.TryParse(Console.ReadLine(), out option))
                 {
@@ -39,19 +40,25 @@ namespace HeThongLapTopDienThoai
                 {
                     case Themhang:
                         {
-                           Helpper<DanhSachHang>.HangNhap(sanPhams, out long sum);
+                            SanPham.ShowHang();
+                            Helpper<HangHoa>.HangNhap(sanPhams, out long sum);
                             total = sum;
                             break;
                         }
                     case XemGio:
                         {
                             SanPham.XemGioHang(sanPhams);
-                            Console.WriteLine("Tong gia tri gio hang: " + total);
+                            Console.WriteLine("Tong gia tri gio hang: " + string.Format("{0:0,0}",total)+"vnd");
+                            break;
+                        }
+                    case ChinhSua:
+                        {
+                            Helpper<HangHoa>.ChinhSuaGioHang(sanPhams);
                             break;
                         }
                     case DatHang:
                         {
-                            Helpper<SanPham>.WriteFile("bill.json", sanPhams);
+                            Helpper<HangHoa>.WriteFile("bill.json", sanPhams);
                             var fullpath = Path.Combine(Common.FullPath, "bill.json");
                             using (StreamWriter sw = File.AppendText(fullpath))
                             {
