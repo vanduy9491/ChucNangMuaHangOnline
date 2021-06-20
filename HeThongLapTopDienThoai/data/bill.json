@@ -1,0 +1,17 @@
+{
+  "bill": [
+    {
+      "Name": "Galaxy S21",
+      "Gia": 25290000,
+      "Soluong": 7,
+      "TongTien1MatHang": 177030000
+    },
+    {
+      "Name": "iphone 8",
+      "Gia": 7290000,
+      "Soluong": 7,
+      "TongTien1MatHang": 51030000
+    }
+  ],
+  "TotalAmount": 480960000
+}

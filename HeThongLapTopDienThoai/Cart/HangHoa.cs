@@ -1,57 +1,44 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.IO;
-using Newtonsoft.Json;
 
 namespace HeThongLapTopDienThoai
 {
-    class Helpper<T> where T : class
+    class HangHoa
     {
-        public static T ReadFile(string filename)
-        {
-            var fullpath = Path.Combine(Common.FullPath, filename);
-            var data = "";
-            using (StreamReader sr = File.OpenText(fullpath))
-            {
-                data = sr.ReadToEnd();
-            }
-            return JsonConvert.DeserializeObject<T>(data);
-        }
-        public static void WriteFile(string filename, object data)
-        {
-            var serializeObject = JsonConvert.SerializeObject(data);
-            var fullpath = Path.Combine(Common.FullPath, filename);
-            using (StreamWriter sw = File.CreateText(fullpath))
-            {
-                sw.WriteLine(serializeObject);
-            }
-        }
-       
-        public static void HangNhap(List<SanPham> loaiHangs, out long sum)
+        public List<SanPham> mathang { get; set; }
+        public static void HangNhap(List<SanPham> loaiHangs, Bill billl, out long sum)
         {
             var result1 = Helpper<HangHoa>.ReadFile("sanpham.json");
-
-
             string choice = "";
-            bool check1 = false;
+            string name;
             do
             {
+                bool check = false;
+                bool check1 = false;
                 Console.Write("Nhap ten san pham: ");
-                string name = Console.ReadLine();
-
-                foreach (SanPham sanpham in loaiHangs)
+                name = Console.ReadLine();
+                foreach (SanPham item in result1.mathang)
                 {
-                    if (sanpham.Name.ToLower() == name.ToLower())
+                    if (item.Name.ToLower() == name.ToLower())
                     {
-                        check1 = true;
+                        check = true;
                     }
                 }
-                Console.Write("Nhap so luong muon mua: ");
-                int sl = int.Parse(Console.ReadLine());
-                foreach (var item in result1.mathang)
+                if (check == true)
                 {
-                   
+                    foreach (SanPham sanpham in loaiHangs)
+                    {
+                        if (sanpham.Name.ToLower() == name.ToLower())
+                        {
+                            check1 = true;
+                        }
+                    }
+                    Console.Write("Nhap so luong muon mua: ");
+                    int sl = int.Parse(Console.ReadLine());
+                    foreach (var item in result1.mathang)
+                    {
+
                         if (item.Name.ToLower() == name.ToLower())
                         {
                             if (item.Soluong < sl)
@@ -81,8 +68,14 @@ namespace HeThongLapTopDienThoai
                                 }
                             }
                         }
+                    }
                 }
-                Console.WriteLine("Ban co muon nhap them hang??");
+                else
+                {
+                    Console.WriteLine("San pham ko ton tai !!");
+                }
+
+                Console.WriteLine("Ban co muon tiep tuc mua hang??");
                 Console.Write("Nhap c de tiep tuc nhap, k de thoat: ");
                 choice = Console.ReadLine();
             }
@@ -92,6 +85,8 @@ namespace HeThongLapTopDienThoai
             {
                 sum += sanpham.TongTien1MatHang;
             }
+            billl.bill = loaiHangs;
+            billl.TotalAmount = sum;
         }
         public static void ChinhSuaGioHang(List<SanPham> loaiHangs)
         {

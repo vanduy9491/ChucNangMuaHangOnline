@@ -7,7 +7,7 @@ namespace HeThongLapTopDienThoai
 {
     class Menu2
     {
-        const int min = 1, max = 4;
+        const int min = 1, max = 5;
         const int Themhang = 1, XemGio = 2, DatHang = 4,ChinhSua = 3, Thoat = 5;
         public static void Buildmenu2(out int option)
         {
@@ -30,6 +30,7 @@ namespace HeThongLapTopDienThoai
         public static void Process2()
         {
             List<SanPham> sanPhams = new List<SanPham>();
+            Bill billl = new Bill();
             var selected = 0;
             long total = 0;
             do
@@ -41,7 +42,7 @@ namespace HeThongLapTopDienThoai
                     case Themhang:
                         {
                             SanPham.ShowHang();
-                            Helpper<HangHoa>.HangNhap(sanPhams, out long sum);
+                            HangHoa.HangNhap(sanPhams,billl, out long sum);
                             total = sum;
                             break;
                         }
@@ -53,18 +54,13 @@ namespace HeThongLapTopDienThoai
                         }
                     case ChinhSua:
                         {
-                            Helpper<HangHoa>.ChinhSuaGioHang(sanPhams);
+                            HangHoa.ChinhSuaGioHang(sanPhams);
                             break;
                         }
                     case DatHang:
                         {
-                            Helpper<HangHoa>.WriteFile("bill.json", sanPhams);
-                            var fullpath = Path.Combine(Common.FullPath, "bill.json");
-                            using (StreamWriter sw = File.AppendText(fullpath))
-                            {
-                                sw.WriteLine($"Tong bill la: {total}");
-                            }
-                            Console.WriteLine("Dat hang thanh cong");
+                            Helpper<Bill>.WriteFile("bill.json", billl);
+                            Console.WriteLine("Dat hang thanh cong!!!");
                             break;
                         }
                     case Thoat:
@@ -73,7 +69,6 @@ namespace HeThongLapTopDienThoai
                             break;
                         }
                 }
-
             }
             while (selected != Thoat);
         }

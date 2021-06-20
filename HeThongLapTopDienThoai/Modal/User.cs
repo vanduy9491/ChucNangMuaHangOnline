@@ -15,7 +15,6 @@ namespace HeThongLapTopDienThoai
             get
             {
                 return username;
-
             }
             set
             {
@@ -27,7 +26,6 @@ namespace HeThongLapTopDienThoai
             get
             {
                 return matKhau;
-
             }
             set
             {

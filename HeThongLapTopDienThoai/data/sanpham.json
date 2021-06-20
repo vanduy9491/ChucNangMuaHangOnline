@@ -1,11 +1,6 @@
 {
   "mathang": [
     {
-      "Name": "Nitro 5",
-      "Gia": 22290000,
-      "Soluong": 100
-    },
-    {
       "Name": "Aspore 7",
       "Gia": 21290000,
       "Soluong": 100
@@ -31,12 +26,12 @@
       "Soluong": 100
     },
     {
-      "Name": "iphone 11",
+      "Name": "Iphone 11",
       "Gia": 12290000,
       "Soluong": 100
     },
     {
-      "Name": "iphone 8",
+      "Name": "Iphone 8",
       "Gia": 7290000,
       "Soluong": 100
     },
